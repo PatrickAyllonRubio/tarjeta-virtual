@@ -6,6 +6,7 @@
   <title>Tarjeta Virtual - Patrick</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <script src="drag.js"></script>
 </head>
 <body>
   <div class="card-container" id="cardContainer">
@@ -24,16 +25,16 @@
               Siempre aprendiendo y creando soluciones funcionales.
             </p>
             <div class="social-icons">
-                <a href="https://github.com/tuusuario" target="_blank" title="GitHub" class="no-flip">
+                <a href="https://github.com/PatrickAyllonRubio" target="_blank" title="GitHub" class="no-flip">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
                 </a>
-                <a href="https://linkedin.com/in/tuusuario" target="_blank" title="LinkedIn" class="no-flip">
+                <a href="https://www.linkedin.com/in/patrick-hugo-ayllon-rubio-8702b4317?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BlnWaE7IJSCC1RBsQnLY7tQ%3D%3D" target="_blank" title="LinkedIn" class="no-flip">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="LinkedIn" />
                 </a>
-                <a href="https://wa.me/51999999999" target="_blank" title="WhatsApp" class="no-flip">
+                <a href="https://wa.me/51983764047" target="_blank" title="WhatsApp" class="no-flip">
                     <img src="imagenes/whatssapp.png" alt="WhatsApp" />
                 </a>
-                <a href="mailto:patrickayllon@gmail.com" target="_blank" title="Gmail" class="no-flip">
+                <a href="mailto:patrick.ayllon@tecsup.edu.pe" target="_blank" title="Gmail" class="no-flip">
                     <img src="imagenes/gmail.png" alt="Gmail" />
                 </a>
             </div>
@@ -42,18 +43,9 @@
       </div>
       <div class="card-face back">
         <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https://patrickayllon.carrd.co&size=160x160" alt="QR de Patrick">
-        <div class="note-back">Escanea el código QR<br>para ver mi tarjeta virtual</div>
+        <div class="note-back">Escanea el código QR<br>para ver más sobre mi</div>
       </div>
     </div>
   </div>
-
-  <script>
-    const card = document.getElementById("card");
-
-    card.addEventListener("click", (e) => {
-      if (e.target.closest(".no-flip")) return;
-      card.classList.toggle("flipped");
-    });
-  </script>
 </body>
 </html>
