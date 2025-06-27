@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarjeta Virtual - Patrick</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card-container" id="cardContainer">
+    <div class="card" id="card">
+      <div class="card-face front">
+        <div class="card-content">
+          <div class="left-column">
+            <img src="imagenes/profile.png" alt="Foto de Patrick Ayllón" class="logo">
+            <h1 class="name">Patrick Ayllón</h1>
+            <h2 class="title">Desarrollador Backend</h2>
+          </div>
+          <div class="right-column">
+            <p class="description">
+              La tecnología avanza y disfruto ser parte de ella.<br>
+              Desarrollo backend, APIs, y arquitectura limpia.<br>
+              Siempre aprendiendo y creando soluciones funcionales.
+            </p>
+            <div class="social-icons">
+                <a href="https://github.com/tuusuario" target="_blank" title="GitHub" class="no-flip">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                </a>
+                <a href="https://linkedin.com/in/tuusuario" target="_blank" title="LinkedIn" class="no-flip">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="LinkedIn" />
+                </a>
+                <a href="https://wa.me/51999999999" target="_blank" title="WhatsApp" class="no-flip">
+                    <img src="imagenes/whatssapp.png" alt="WhatsApp" />
+                </a>
+                <a href="mailto:patrickayllon@gmail.com" target="_blank" title="Gmail" class="no-flip">
+                    <img src="imagenes/gmail.png" alt="Gmail" />
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-face back">
+        <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https://patrickayllon.carrd.co&size=160x160" alt="QR de Patrick">
+        <div class="note-back">Escanea el código QR<br>para ver mi tarjeta virtual</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const card = document.getElementById("card");
+
+    card.addEventListener("click", (e) => {
+      if (e.target.closest(".no-flip")) return;
+      card.classList.toggle("flipped");
+    });
+  </script>
+</body>
+</html>
